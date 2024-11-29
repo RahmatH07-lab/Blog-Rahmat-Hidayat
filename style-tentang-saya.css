@@ -1,230 +1,92 @@
-/* Reset beberapa elemen untuk penampilan yang lebih konsisten di semua browser */
+/* Reset margin dan padding untuk semua elemen */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Pengaturan font dan warna dasar */
+/* Gaya umum halaman */
 body {
-    font-family: 'Georgia', serif; /* Font klasik dan elegan */
-    background-color: #f4f4f9; /* Warna latar belakang lembut */
-    color: #333; /* Warna teks utama yang gelap */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Pengaturan untuk header */
-h1, h2 {
-    font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
-    color: #2c3e50; /* Warna gelap untuk heading */
-    margin-bottom: 15px;
-}
-
-/* Kontainer utama untuk halaman */
+/* Kontainer utama */
 .container {
     width: 80%;
-    max-width: 1000px;
     margin: 0 auto;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Bagian header yang memuat nama dan informasi pribadi */
-.header {
+/* Header */
+header {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.header h1 {
+header h1 {
     font-size: 2.5em;
-    font-weight: bold;
+    color: #4CAF50;
 }
 
-.header p {
-    font-size: 1.1em;
-    color: #7f8c8d;
+header p {
+    font-size: 1.2em;
+    color: #555;
 }
 
-/* Reset beberapa elemen untuk penampilan yang lebih konsisten di semua browser */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Pengaturan font dan warna dasar */
-body {
-    font-family: 'Georgia', serif; /* Font klasik dan elegan */
-    background-color: #f4f4f9; /* Warna latar belakang lembut */
-    color: #333; /* Warna teks utama yang gelap */
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Pengaturan untuk header */
-h1, h2 {
-    font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
-    color: #2c3e50; /* Warna gelap untuk heading */
-    margin-bottom: 15px;
-}
-
-/* Kontainer utama untuk halaman */
-.container {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
-}
-
-/* Bagian header yang memuat nama dan informasi pribadi */
-.header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.header h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-.header p {
-    font-size: 1.1em;
-    color: #7f8c8d;
-}
-
-/* Bagian untuk setiap bab informasi */
+/* Bagian Section */
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .section h2 {
     font-size: 2em;
-    color: #2c3e50;
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
-.section p {
+/* Gaya konten dalam setiap section */
+.content {
+    margin-left: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content ul li {
+    margin: 10px 0;
     font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #555;
 }
 
-.section ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.section ul li {
-    margin-bottom: 8px;
-}
-
-/* Bagian footer yang lebih kecil */
-.footer {
+/* Footer */
+footer {
     text-align: center;
-    font-size: 0.9em;
-    color: #7f8c8d;
     margin-top: 40px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
 }
 
-/* Gaya untuk link */
-a {
-    color: #3498db;
-    text-decoration: none;
+footer p {
+    font-size: 1.1em;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Styling untuk tombol jika ada */
-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Responsif untuk tampilan layar kecil */
+/* Responsif untuk perangkat mobile */
 @media (max-width: 768px) {
     .container {
-        width: 90%;
-        padding: 15px;
+        width: 95%;
     }
 
-    h1 {
+    header h1 {
         font-size: 2em;
     }
 
-    h2 {
+    .section h2 {
         font-size: 1.8em;
     }
-
-    p, ul {
-        font-size: 1em;
-    }
-}￼Enter/* Bagian untuk setiap bab informasi */
-.section {
-    margin-bottom: 30px;
 }
-
-.section h2 {
-    font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.section p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.section ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.section ul li {
-    margin-bottom: 8px;
-}
-
-ian footer yang lebih kecil */
-.footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #7f8c8d;
-    margin-top: 40px;
-}
-
-/* Gaya untuk link */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Styling untuk tombol jika ada */
-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
