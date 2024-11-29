@@ -41,3 +41,16 @@ function renderApprovedComments() {
     approvedCommentsList.appendChild(listItem);
   });
 }￼Enter
+let currentUser = null;
+
+// Tangani login
+document.getElementById('loginForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const username = document.getElementById('loginUsername').value;
+
+  if (username) {
+    currentUser = username;
+    document.getElementById('loginStatus').textContent = `Selamat datang, ${currentUser}!`;
+    alert(`Anda telah login sebagai ${currentUser}.`);
+  }
+});
