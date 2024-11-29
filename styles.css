@@ -76,3 +76,61 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+#comments {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+#comments h2 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+#comments form {
+  display: flex;
+  flex-direction: column;
+}
+
+#comments label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#comments input, #comments textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#comments button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#comments button:hover {
+  background-color: #45a049;
+}
+
+#moderatedComments {
+  margin-top: 20px;
+}
+
+#approvedComments {
+  list-style-type: none;
+  padding: 0;
+}
+
+#approvedComments li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
