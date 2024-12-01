@@ -1,1 +1,100 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kontak {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.kontak h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.kontak-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kontak-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.kontak-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.kontak-button:hover {
+    transform: scale(1.05);
+}
+
+.kontak-button.whatsapp {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.kontak-button.instagram {
+    background-color: #E4405F;
+    color: #fff;
+}
+
+.kontak-button.email {
+    background-color: #0077B5;
+    color: #fff;
+}
+
+.kontak-button span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.kontak-button img {
+    width: 40px;  /* Sesuaikan ukuran logo */
+    height: 40px; /* Sesuaikan ukuran logo */
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+    vertical-align: middle; /* Agar gambar sejajar dengan teks */
+}
