@@ -98,3 +98,18 @@ header nav ul li a {
     margin-right: 10px; /* Jarak antara gambar dan teks */
     vertical-align: middle; /* Agar gambar sejajar dengan teks */
 }
+
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks */
+    text-align: center; /* Teks berada di tengah */
+    padding: 10px 0; /* Jarak vertikal */
+    font-size: 14px; /* Ukuran teks */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Menghapus margin default */
+}
