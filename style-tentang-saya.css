@@ -92,13 +92,14 @@ section p {
 
 /* Home Section */
 #home {
-  background: linear-gradient(
-      rgba(44, 62, 80, 0.6),
-      rgba(44, 62, 80, 0.6)
-    ),
-    url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2d3e50, #34495e);
   color: #ecf0f1;
-  padding: 100px 20px;
+  height: 400px;
+  text-align: center;
 }
 
 #home h1 {
@@ -113,6 +114,13 @@ section p {
   animation: fadeIn 1.5s ease;
 }
 
+/* Placeholder Icon */
+#home .icon-placeholder {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /* About Section */
 #about {
   background-color: #ffffff;
@@ -123,32 +131,6 @@ section p {
   text-align: justify;
   margin: 20px auto;
   max-width: 800px;
-}
-
-/* Blog Section */
-#blog article {
-  background-color: #ffffff;
-  padding: 30px;
-  margin: 20px auto;
-  max-width: 700px;
-  border-left: 6px solid #3498db;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#blog article:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
-
-#blog article h3 {
-  color: #2d3e50;
-  margin-bottom: 10px;
-}
-
-#blog article p {
-  text-align: justify;
 }
 
 /* Contact Form Styles */
@@ -229,20 +211,28 @@ footer p {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Responsive Design */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
+  /* Header */
   header .nav-links {
     flex-direction: column;
+    align-items: center;
   }
 
   header .nav-links li {
     margin: 10px 0;
+  }
+
+  /* Home Section */
+  #home {
+    height: 300px;
   }
 
   #home h1 {
@@ -253,7 +243,55 @@ footer p {
     font-size: 1.2rem;
   }
 
+  /* Section */
+  section {
+    padding: 60px 15px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  /* Contact Form */
+  #contact form {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  #contact form button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Home Section */
+  #home {
+    height: 250px;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  /* Contact Form */
   #contact form {
     padding: 20px;
   }
-    }
+
+  #contact form button {
+    font-size: 1rem;
+  }
+  }
