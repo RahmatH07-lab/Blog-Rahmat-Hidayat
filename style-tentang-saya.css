@@ -165,7 +165,7 @@ footer {
 /* Slider */
 .slider {
   display: flex;
-  animation: slide 20s infinite; /* Animasi untuk perpindahan gambar */
+  animation: slide 10s infinite; /* Animasi untuk perpindahan gambar */
 }
 
 /* Gambar dalam slider */
