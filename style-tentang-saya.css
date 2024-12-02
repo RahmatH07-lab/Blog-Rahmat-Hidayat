@@ -182,3 +182,10 @@ footer {
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
 }
+
+.slider img {
+  width: 100%; /* Membuat lebar gambar menyesuaikan dengan lebar slider */
+  height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+  object-fit: contain; /* Memastikan seluruh gambar terlihat tanpa terpotong */
+  display: block; /* Menghapus margin bawaan jika ada */
+}
