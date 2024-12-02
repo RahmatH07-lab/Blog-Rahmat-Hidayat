@@ -159,6 +159,8 @@ footer {
   max-width: 800px; /* Batasi lebar maksimal untuk slider */
   margin: 0 auto; /* Agar slider berada di tengah */
   overflow: hidden; /* Menyembunyikan elemen di luar area slider */
+    border-radius: 10px;
+    border: 2px solid #ddd;
   position: relative; /* Untuk elemen di dalam slider */
 }
 
@@ -172,7 +174,9 @@ footer {
 .slider img {
   width: 100%; /* Gambar mengikuti lebar container slider */
   height: auto; /* Menjaga proporsi asli gambar */
-  object-fit: contain; /* Memastikan gambar terlihat sepenuhnya */
+    max-height: 400px; batas tinggi maks gambar
+  object-fit: cover 
+      object-fit: contain; /* Memastikan gambar terlihat sepenuhnya */
 }
 
 /* Animasi slider */
