@@ -178,6 +178,26 @@ footer {
   object-fit: cover 
       object-fit: contain; /* Memastikan gambar terlihat sepenuhnya */
 }
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 /* Animasi slider */
 @keyframes slide {
