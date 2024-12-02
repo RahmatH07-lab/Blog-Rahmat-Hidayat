@@ -119,19 +119,10 @@ footer p {
     }
 }
 
-/* Slider */
-.slider {
-    width: 100%;
-    height: 200px; /* Sesuaikan tinggi slider sesuai kebutuhan */
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
-}
-
 .slides {
     display: flex;
     width: 300%;
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
 }
 
 .slides img {
@@ -175,17 +166,39 @@ footer {
     color: #fff;
 }
 
-/* Animasi Slider */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-}
-
 .slider img {
   width: 100%; /* Membuat lebar gambar menyesuaikan dengan lebar slider */
   height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
   object-fit: contain; /* Memastikan seluruh gambar terlihat tanpa terpotong */
   display: block; /* Menghapus margin bawaan jika ada */
 }
+
+/* Container slider */
+.slider-container {
+  width: 100%; /* Atur ukuran lebar container */
+  max-width: 800px; /* Batasi lebar maksimal untuk slider */
+  margin: 0 auto; /* Agar slider berada di tengah */
+  overflow: hidden; /* Menyembunyikan elemen di luar area slider */
+  position: relative; /* Untuk elemen di dalam slider */
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  animation: slide 20s infinite; /* Animasi untuk perpindahan gambar */
+}
+
+/* Gambar dalam slider */
+.slider img {
+  width: 100%; /* Gambar mengikuti lebar container slider */
+  height: auto; /* Menjaga proporsi asli gambar */
+  object-fit: contain; /* Memastikan gambar terlihat sepenuhnya */
+}
+
+/* Animasi slider */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+    }
