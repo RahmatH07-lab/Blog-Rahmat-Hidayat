@@ -1,133 +1,40 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Rahmat Hidayat</title>
-    <link rel="stylesheet" href="style-navigation.css">
+    <title>Tentang Saya</title>
+    <link rel="stylesheet" href="style-tentang-saya.css">
 </head>
-
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #0056b3;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 20px;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #003d80;
-    }
-    
-    .container {
-      padding: 20px;
-    }
-
-    .section {
-      margin: 20px 0;
-      background: white;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #0056b3;
-      color: white;
-      margin-top: 20px;
-    }
-        </style>
-    
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Beranda</a></li>
-                <li class="dropdown">
-                    <span>Seputar Informasi</span>
-                    <ul class="submenu">
-                        <li><a href="berita-harian.html">Berita Harian</a></li>
-                        <li><a href="ilmu-hukum.html">Ilmu Hukum</a></li>
-                        <li><a href="teknologi.html">Teknologi</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span>Produk/Jasa</span>
-                    <ul class="submenu">
-                        <li><a href="produk.html">Produk</a></li>
-                        <li><a href="jasa.html">Jasa</a></li>
-                        <li><a href="portofolio.html">Portofolio</a></li>
-                    </ul>
-                </li>
-                <li><a href="tentang-saya.html">Tentang Saya</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-            </header>
-    <main>
-        <h1>Selamat Datang di Beranda Rahmat Hidayat</h1>
-        <p>Ini adalah situs pribadi saya untuk berbagi informasi, produk, jasa, dan portofolio.</p>
-    </main>
-        
-        <div class="container">
-    <div class="section">
-      <h2>Tujuan Blog Ini</h2>
-      <p>Blog ini bertujuan untuk berbagi wawasan, ilmu, dan pengalaman seputar kehidupan, hukum, teknologi, serta menyediakan barang dan jasa yang bermanfaat bagi pembaca.</p>
-    </div>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang-saya.html">Tentang Saya</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <div class="section">
-      <h2>Seputar Informasi</h2>
-      <ul>
-        <li><a href="berita-harian.html">Berita Harian</a></li>
-        <li><a href="ilmu-hukum.html">Ilmu Hukum</a></li>
-        <li><a href="teknologi.html">Teknologi</a></li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Produk dan Jasa</h2>
-      <p>Kami menawarkan berbagai barang dan jasa yang dapat membantu kebutuhan Anda. <a href="produk-jasa.html">Lihat lebih lanjut</a>.</p>
-    </div>
-
-    <div class="section">
-      <h2>Kontak</h2>
-      <p>Jika Anda ingin menghubungi saya untuk pertanyaan, diskusi, atau kolaborasi, silakan menuju halaman <a href="kontak.html">Kontak</a>.</p>
-    </div>
-
-    <div class="section">
-      <h2>Komentar</h2>
-      <p>Silakan tuliskan komentar, pertanyaan, atau diskusi Anda di sini:</p>
-      <form action="#" method="post">
-        <textarea name="komentar" rows="5" placeholder="Tulis komentar Anda di sini..." style="width: 100%; padding: 10px;"></textarea>
-        <button type="submit" style="margin-top: 10px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Kirim</button>
-      </form>
-    </div>
+    <!-- Slider Gambar -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="image1.jpg" alt="Gambar 1">
+            <img src="image2.jpg" alt="Gambar 2">
+            <img src="image3.jpg" alt="Gambar 3">
         </div>
-    
+    </div>
+
+    <!-- Konten Tentang Saya -->
+    <section class="about-me">
+        <h1>Tentang Saya</h1>
+        <p>Halo! Saya Rahmat Hidayat, S.H., seorang individu yang bersemangat dalam bidang hukum, pengembangan diri, dan teknologi.</p>
+        <p>Saya memiliki pengalaman luas di bidang akademik, organisasi, dan karier profesional. Saya percaya bahwa tidak ada kata terlambat untuk menjadi lebih baik. Mari terus berkembang bersama!</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Rahmat Hidayat. Semua hak dilindungi.</p>
+        <p>© 2024 Rahmat Hidayat. Semua hak dilindungi.</p>
     </footer>
 </body>
 </html>
