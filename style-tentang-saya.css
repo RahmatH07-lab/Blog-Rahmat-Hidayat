@@ -186,3 +186,25 @@ footer {
   66% { transform: translateX(-200%); }
   100% { transform: translateX(0); }
     }
+
+/* Responsif untuk layar besar (desktop) */
+@media (min-width: 1024px) {
+    .slider-container {
+        max-width: 1200px; /* Lebar lebih besar di layar desktop */
+    }
+
+    .slider img {
+        max-height: 500px; /* Tinggi lebih besar untuk layar besar */
+    }
+}
+
+/* Responsif untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+    .slider-container {
+        max-width: 100%; /* Lebar penuh untuk layar kecil */
+    }
+
+    .slider img {
+        max-height: 300px; /* Tinggi lebih kecil untuk layar ponsel */
+    }
+}
