@@ -163,11 +163,14 @@ footer {
     border: 2px solid #ddd;
   position: relative; /* Untuk elemen di dalam slider */
 }
+}
 
 /* Slider */
 .slider {
   display: flex;
   animation: slide 10s infinite; /* Animasi untuk perpindahan gambar */
+transition: transform 0.5s ease-in-out;
+flex-shrink: 0;
 }
 
 /* Gambar dalam slider */
