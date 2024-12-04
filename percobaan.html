@@ -36,11 +36,25 @@
             <h3>Contoh Hasil:</h3>
              <div class="gallery">
         <!-- Link untuk download gambar -->
-            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih">
-            <img src="contoh-edit-foto2.jpeg" alt="Twibbon">
-            <img src="contoh-edit-foto3.jpeg" alt="Logo">
-            <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog">
+            <div class="gallery-item">
+            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih" onclick="openPreview(this)">
+            </div>
+            <div class="gallery-item">
+            <img src="contoh-edit-foto2.jpeg" alt="Twibbon" onclick="openPreview(this)">
+            </div>
+            <div class="gallery-item">
+            <img src="contoh-edit-foto3.jpeg" alt="Logo" onclick="openPreview(this)">
+            </div>
+            <div class="gallery-item">
+            <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog" onclick="openPreview(this)">
+            </div>
     </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" onclick=""closePreview()"
+                <span id="close-btn">&times;</span>
+                <img id="preview-image" style="display: none;">
+            </div>
         </section>
         
             <section>
