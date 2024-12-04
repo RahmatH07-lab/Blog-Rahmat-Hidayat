@@ -49,6 +49,30 @@
         </a>
     </div>
         </section>
+
+<div class="gallery">
+    <h2>Contoh Hasil Jasa</h2>
+
+    <!-- Contoh Foto -->
+    <div class="gallery-item">
+        <img src="example-photo1.jpg" alt="Contoh Foto 1" onclick="openPreview(this)">
+    </div>
+    <div class="gallery-item">
+        <img src="example-photo2.jpg" alt="Contoh Foto 2" onclick="openPreview(this)">
+    </div>
+
+    <!-- Contoh Video -->
+    <div class="gallery-item">
+        <video src="example-video.mp4" controls onclick="openPreview(this)"></video>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closePreview()">
+    <span id="close-btn">&times;</span>
+    <img id="preview-image" style="display: none;">
+    <video id="preview-video" controls style="display: none;"></video>
+</div>
         
             <section>
     <h2>2. Jasa Edit Video</h2>
