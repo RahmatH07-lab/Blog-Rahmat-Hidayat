@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasa - Rahmat Hidayat</title>
     <link rel="stylesheet" href="style-jasa.css">
+    <link rel="stylesheet" href="lightbox-jasa.css">
 </head>
 <body>
     <header>
@@ -34,41 +35,24 @@
             </ul>
             <h3>Contoh Hasil:</h3>
              <div class="gallery">
-        <!-- Link untuk download gambar -->
+        <!-- Link untuk preview gambar -->
         <a href="contoh-edit-foto1.jpeg" download>
-            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih">
+            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih" onclick="openPreview(this)">
         </a>
         <a href="contoh-edit-foto2.jpeg" download>
-            <img src="contoh-edit-foto2.jpeg" alt="Twibbon">
+            <img src="contoh-edit-foto2.jpeg" alt="Twibbon" onclick="openPreview(this)>
         </a>
         <a href="contoh-edit-foto3.jpeg" download>
-            <img src="contoh-edit-foto3.jpeg" alt="Logo">
+            <img src="contoh-edit-foto3.jpeg" alt="Logo" onclick="openPreview(this)>
         </a>
         <a href="contoh-edit-foto4.jpeg" download>
-            <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog">
+            <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog" onclick="openPreview(this)>
         </a>
     </div>
         </section>
 
-<div class="gallery">
-    <h2>Contoh Hasil Jasa</h2>
-
-    <!-- Contoh Foto -->
-    <div class="gallery-item">
-        <img src="example-photo1.jpg" alt="Contoh Foto 1" onclick="openPreview(this)">
-    </div>
-    <div class="gallery-item">
-        <img src="example-photo2.jpg" alt="Contoh Foto 2" onclick="openPreview(this)">
-    </div>
-
-    <!-- Contoh Video -->
-    <div class="gallery-item">
-        <video src="example-video.mp4" controls onclick="openPreview(this)"></video>
-    </div>
-</div>
-
 <!-- Lightbox -->
-<div id="lightbox" onclick="closePreview()">
+<div id="lightbox" onclick="closePreview(this)">
     <span id="close-btn">&times;</span>
     <img id="preview-image" style="display: none;">
     <video id="preview-video" controls style="display: none;"></video>
