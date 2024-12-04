@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasa - Rahmat Hidayat</title>
     <link rel="stylesheet" href="style-jasa.css">
-    <link rel="stylesheet" href="lightbox-jasa.css">
 </head>
 <body>
     <header>
@@ -34,29 +33,22 @@
                 <li>Ganti baju formal untuk kebutuhan foto resmi</li>
             </ul>
             <h3>Contoh Hasil:</h3>
-    <div class="gallery">
-        <!-- Link untuk preview gambar -->
-        <div class="gallery-item">
-            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih" onclick="openPreview(this)">
-        </div>
-         <div class="gallery-item">
-            <img src="contoh-edit-foto2.jpeg" alt="Twibbon" onclick="openPreview(this)>
-        </div>
-         <div class="gallery-item">
-            <img src="contoh-edit-foto3.jpeg" alt="Logo" onclick="openPreview(this)>
-        </div>
-        <div class="gallery-item">
-                <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog" onclick="openPreview(this)>
-        </div>
+             <div class="gallery">
+        <!-- Link untuk download gambar -->
+        <a href="contoh-edit-foto1.jpeg" download>
+            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih">
+        </a>
+        <a href="contoh-edit-foto2.jpeg" download>
+            <img src="contoh-edit-foto2.jpeg" alt="Twibbon">
+        </a>
+        <a href="contoh-edit-foto3.jpeg" download>
+            <img src="contoh-edit-foto3.jpeg" alt="Logo">
+        </a>
+        <a href="contoh-edit-foto4.jpeg" download>
+            <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog">
+        </a>
     </div>
         </section>
-
-<!-- Lightbox -->
-<div id="lightbox" onclick="closePreview()">
-    <span id="close-btn">&times;</span>
-    <img id="preview-image" style="display: none;">
-    <video id="preview-video" controls style="display: none;"></video>
-</div>
         
             <section>
     <h2>2. Jasa Edit Video</h2>
@@ -70,12 +62,14 @@
     <h3>Contoh Hasil:</h3>
     <div class="video-gallery">
         <!-- Video embed dari YouTube -->
+        <a href="contoh-edit-video.mp4" download>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ROf6IfE5BGI" 
             title="Contoh Video Jasa Edit" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe>
+        </a>
     </div>
             </section>
         </section>
