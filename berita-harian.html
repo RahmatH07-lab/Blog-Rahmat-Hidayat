@@ -1,60 +1,74 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berita Harian</title>
-    <link rel="stylesheet" href="style-berita.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Berita Harian</h1>
-        <p>Berita hukum terbaru di Indonesia</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ilmu-hukum.html">Ilmu Hukum</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1>Berita Harian</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="berita-harian.html" class="active">Berita Harian</a>
+                <a href="ilmu-hukum.html">Ilmu Hukum</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="headline">
-            <h2>Headline Terbaru</h2>
-            <article>
-                <h3><a href="artikel.html">Mahkamah Konstitusi Perbarui Aturan Pilpres 2024</a></h3>
-                <p>Mahkamah Konstitusi baru saja memutuskan ...</p>
-                <span>06 Desember 2024</span>
-            </article>
-        </section>
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cari berita..." onkeyup="searchArticles()">
+    </div>
 
-        <section class="kategori">
-            <h2>Kategori Berita</h2>
-            <ul>
-                <li><a href="#">Regulasi</a></li>
-                <li><a href="#">Kasus Hukum</a></li>
-                <li><a href="#">Opini</a></li>
-                <li><a href="#">Putusan Pengadilan</a></li>
-            </ul>
-        </section>
+    <!-- Konten Utama -->
+    <main class="content container">
+        <div id="newsGrid" class="grid-container">
+            <!-- Artikel Placeholder -->
+            <article class="news-card">
+                <img src="images/berita/news1.jpg" alt="Berita 1">
+                <h3>Judul Berita Harian 1</h3>
+                <p>Ringkasan berita harian terbaru...</p>
+                <a href="artikel-1.html">Baca selengkapnya</a>
+            </article>
+            <!-- Tambahkan lebih banyak artikel di sini -->
+        </div>
 
-        <section class="berita-list">
-            <h2>Berita Lainnya</h2>
-            <article>
-                <h3><a href="artikel.html">Jaksa Agung Evaluasi Proses Penuntutan</a></h3>
-                <p>Dalam konferensi pers hari ini, Jaksa Agung...</p>
-                <span>05 Desember 2024</span>
-            </article>
-            <article>
-                <h3><a href="artikel.html">Undang-Undang Perlindungan Konsumen Baru Disahkan</a></h3>
-                <p>Setelah melalui proses panjang, DPR akhirnya...</p>
-                <span>04 Desember 2024</span>
-            </article>
-        </section>
+        <!-- Pagination -->
+        <div class="pagination">
+            <button onclick="goToPage(1)">1</button>
+            <button onclick="goToPage(2)">2</button>
+            <button onclick="goToPage(3)">3</button>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Blog Hukum Anda</p>
+    <!-- Disqus Komentar -->
+    <section class="comments-section">
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = document.title;
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://your-site-name.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Blog Hukum. Semua hak dilindungi.</p>
+        </div>
     </footer>
 </body>
-</html>￼Enter
+                </html>
