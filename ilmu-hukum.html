@@ -4,48 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilmu Hukum</title>
-    <link rel="stylesheet" href="style-ilmu-hukum.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Ilmu Hukum</h1>
-        <p>Pelajari lebih dalam teori dan praktik hukum</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="berita-harian.html">Berita Harian</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1>Ilmu Hukum</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="berita-harian.html">Berita Harian</a>
+                <a href="ilmu-hukum.html" class="active">Ilmu Hukum</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Kategori Artikel</h2>
-            <ul>
-                <li><a href="#">Hukum Perdata</a></li>
-                <li><a href="#">Hukum Pidana</a></li>
-                <li><a href="#">Hukum Bisnis</a></li>
-                <li><a href="#">Hukum Internasional</a></li>
-            </ul>
-        </section>
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInputIlmu" placeholder="Cari topik hukum..." onkeyup="searchTopics()">
+    </div>
 
-        <section>
-            <h2>Artikel Terbaru</h2>
-            <article>
-                <h3><a href="artikel.html">Konsep Dasar Hukum Perdata</a></h3>
-                <p>Hukum perdata adalah salah satu cabang hukum yang ...</p>
-                <span>06 Desember 2024</span>
+    <!-- Konten Utama -->
+    <main class="content container">
+        <div id="lawGrid" class="grid-container">
+            <!-- Artikel Placeholder -->
+            <article class="law-card">
+                <img src="images/ilmu/law1.jpg" alt="Hukum 1">
+                <h3>Pengenalan Hukum Perdata</h3>
+                <p>Bahas dasar-dasar hukum perdata dan penerapannya...</p>
+                <a href="artikel-ilmu-1.html">Baca selengkapnya</a>
             </article>
-            <article>
-                <h3><a href="artikel.html">Pengaruh Hukum Internasional dalam Perdagangan</a></h3>
-                <p>Globalisasi membawa dampak besar pada perdagangan ...</p>
-                <span>05 Desember 2024</span>
-            </article>
-        </section>
+            <!-- Tambahkan lebih banyak artikel di sini -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button onclick="goToLawPage(1)">1</button>
+            <button onclick="goToLawPage(2)">2</button>
+            <button onclick="goToLawPage(3)">3</button>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Blog Hukum Anda</p>
+    <!-- Disqus Komentar -->
+    <section class="comments-section">
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = document.title;
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://your-site-name.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Blog Hukum. Semua hak dilindungi.</p>
+        </div>
     </footer>
 </body>
-</html>￼Enter
+    </html>
