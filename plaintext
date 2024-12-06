@@ -1,0 +1,13 @@
+blog/
+├── index.html              # Halaman Beranda
+├── berita-harian.html      # Halaman Berita Harian
+├── ilmu-hukum.html         # Halaman Ilmu Hukum
+├── css/
+│   ├── style.css           # Gaya utama
+├── js/
+│   ├── script.js           # Logika umum
+├── images/                 # Direktori gambar
+│   ├── berita/
+│   ├── ilmu/
+├── libs/
+│   ├── disqus.html         # File terpisah untuk layanan Disqus￼Enter
