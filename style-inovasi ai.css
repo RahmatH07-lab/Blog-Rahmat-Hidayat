@@ -1,0 +1,81 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Header */
+.main-header {
+  background: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+}
+
+.main-header p {
+  font-size: 1.2em;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #333;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: white;
+}
