@@ -1,120 +1,92 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasa - Rahmat Hidayat</title>
-    <link rel="stylesheet" href="style-jasa.css">
+    <title>Beranda - Rahmat Hidayat</title>
+    <link rel="stylesheet" href="style-navigation.css">
+    <link rel="stylesheet" href="style.css"> <!-- Tambahkan file CSS untuk responsif -->
 </head>
 <body>
+
     <header>
-        <h1>Jasa Layanan Rahmat Hidayat</h1>
-        <p>Profesional dan Berkualitas untuk Kebutuhan Anda</p>
         <nav>
-            <ul>
+            <div class="logo">Rahmat Hidayat</div>
+            <button class="menu-toggle">&#9776;</button> <!-- Tombol menu untuk mobile -->
+            <ul class="menu">
                 <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                    <span>Informasi/Ilmu</span>
+                    <ul class="submenu">
+                        <li><a href="berita-harian.html">Berita Harian</a></li>
+                        <li><a href="ilmu-hukum.html">Ilmu Hukum</a></li>
+                        <li><a href="teknologi.html">Teknologi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>Produk/Jasa</span>
+                    <ul class="submenu">
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="jasa.html">Jasa</a></li>
+                        <li><a href="portofolio.html">Portofolio</a></li>
+                    </ul>
+                </li>
                 <li><a href="tentang-saya.html">Tentang Saya</a></li>
-                <li><a href="jasa.html">Jasa</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <script src="lightbox-jasa.js"></script>
-            <h2>1. Jasa Edit Foto</h2>
-            <p>Memberikan hasil edit foto berkualitas tinggi dengan berbagai layanan, seperti:</p>
-            <ul>
-                <li>Recolor foto hitam putih</li>
-                <li>Membuat Twibbon</li>
-                <li>Membuat Logo</li>
-                <li>Foto produk atau katalog</li>
-                <li>Ganti latar belakang (background)</li>
-                <li>Ganti baju formal untuk kebutuhan foto resmi</li>
-            </ul>
-            <h3>Contoh Hasil:</h3>
-             <div class="gallery">
-        <!-- Link untuk download gambar -->
-            <div class="gallery-item">
-            <img src="contoh-edit-foto1.jpeg" alt="Recolor Foto Hitam Putih" onclick="openPreview(this)">
-            </div>
-            <div class="gallery-item">
-            <img src="contoh-edit-foto2.jpeg" alt="Twibbon" onclick="openPreview(this)">
-            </div>
-            <div class="gallery-item">
-            <img src="contoh-edit-foto3.jpeg" alt="Logo" onclick="openPreview(this)">
-            </div>
-            <div class="gallery-item">
-            <img src="contoh-edit-foto4.jpeg" alt="Produk/Katalog" onclick="openPreview(this)">
-            </div>
-    </div>
-
-            <!-- Lightbox -->
-            <div id="lightbox" onclick=""closePreview()"
-                <span id="close-btn">&times;</span>
-                <img id="preview-image" style="display: none;">
-            </div>
-        </section>
-        
-            <section>
-    <h2>2. Jasa Edit Video</h2>
-    <p>Menghasilkan video berkualitas dengan layanan seperti:</p>
-    <ul>
-        <li>Menghilangkan suara bising</li>
-        <li>Membuat video lebih stabil dari hasil rekaman yang goyang</li>
-        <li>Edit video cinematic</li>
-        <li>Edit video untuk konten pendek (short) dan konten panjang</li>
-    </ul>
-    <h3>Contoh Hasil:</h3>
-    <div class="video-gallery">
-        <!-- Video embed dari YouTube -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ROf6IfE5BGI" 
-            title="Contoh Video Jasa Edit" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
-            </section>
-        </section>
-
-        <section>
-            <h2>3. Jasa Pengetikan, Writing, dan Copywriting</h2>
-            <p>Layanan penulisan profesional untuk berbagai kebutuhan:</p>
-            <ul>
-                <li>Pengetikan dokumen</li>
-                <li>Penulisan deskripsi produk</li>
-                <li>Copywriting untuk promosi dan iklan</li>
-                <li>Translate Bahasa Inggris - Indonesia, dan sebaliknya</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>4. Jasa Konsultasi Hukum</h2>
-            <p>Konsultasi hukum untuk permasalahan perdata, perjanjian kerja, atau dokumen hukum lainnya. Pengalaman di bidang hukum memberikan solusi terbaik untuk kebutuhan Anda.</p>
-        </section>
-
-        <section>
-            <h2>5. Konsultan Pembuatan Proposal dan Skripsi</h2>
-            <p>Menyediakan layanan untuk membantu pembuatan proposal penelitian, bisnis, hingga skripsi, dengan pendekatan yang profesional dan sesuai kebutuhan Anda.</p>
-        </section>
-
-        <section>
-            <h2>6. Pembuatan Undangan Digital</h2>
-            <p>Menyediakan undangan digital dengan fitur-fitur premium seperti:</p>
-            <ul>
-                <li>Desain interaktif</li>
-                <li>Form RSVP</li>
-                <li>Galeri foto</li>
-                <li>Peta lokasi langsung</li>
-                <li>Animasi menarik</li>
-            </ul>
-        </section>
+        <h1>Selamat Datang di Beranda Rahmat Hidayat</h1>
+        <p>Ini adalah situs pribadi saya untuk berbagi informasi, produk, jasa, dan portofolio.</p>
     </main>
 
+    <div class="container">
+        <div class="section">
+            <h2>Tujuan Blog Ini</h2>
+            <p>Blog ini bertujuan untuk berbagi wawasan, ilmu, dan pengalaman seputar kehidupan, hukum, teknologi, serta menyediakan barang dan jasa yang bermanfaat bagi pembaca.</p>
+        </div>
+
+        <div class="section">
+            <h2>Informasi/Ilmu</h2>
+            <ul>
+                <li><a href="berita-harian.html">Berita Harian</a></li>
+                <li><a href="ilmu-hukum.html">Ilmu Hukum</a></li>
+                <li><a href="teknologi.html">Teknologi</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Produk dan Jasa</h2>
+            <p>Kami menawarkan berbagai barang dan jasa yang dapat membantu kebutuhan Anda. <a href="produk-jasa.html">Lihat lebih lanjut</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Kontak</h2>
+            <p>Jika Anda ingin menghubungi saya untuk pertanyaan, diskusi, atau kolaborasi, silakan menuju halaman <a href="kontak.html">Kontak</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Komentar</h2>
+            <p>Silakan tuliskan komentar, pertanyaan, atau diskusi Anda di sini:</p>
+            <form id="komentarForm" action="#" method="post">
+                <textarea name="komentar" rows="5" placeholder="Tulis komentar Anda di sini..."></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Rahmat Hidayat. Semua hak cipta dilindungi.</p>
+        <p>&copy; 2024 Rahmat Hidayat. Semua hak dilindungi.</p>
     </footer>
+
+    <script>
+        // Toggle menu untuk mobile
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".menu").classList.toggle("show");
+        });
+    </script>
+
 </body>
 </html>
