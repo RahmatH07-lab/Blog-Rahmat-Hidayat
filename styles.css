@@ -8,12 +8,6 @@ body {
     color: #333;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
 
 .nav-links {
     list-style: none;
