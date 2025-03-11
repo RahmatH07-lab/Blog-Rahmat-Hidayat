@@ -47,12 +47,7 @@ form input, form textarea, form button {
     border-radius: 5px;
 }
 
-form button {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+
 
 form button:hover {
     background: #555;
