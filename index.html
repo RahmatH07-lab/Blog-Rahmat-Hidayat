@@ -12,50 +12,8 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-        }
-
-        nav a:hover {
-            background-color: #003d80;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .section {
-            margin: 20px 0;
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #0056b3;
-            color: white;
-            margin-top: 20px;
-        }
+        
+        /* ...style lainnya... */
         
         @media (min-width: 768px) {
             body {
@@ -68,24 +26,7 @@
     <header>
         <nav>
             <ul class="menu">
-                <li class="dropdown">
-                    <span>Informasi/Ilmu</span>
-                    <ul class="submenu">
-                        <li><a href="https://rahmath07-lab.github.io/Blog-Rahmat-Hidayat/Berita-Harian/">Berita Harian</a></li>
-                        <li><a href="https://rahmath07-lab.github.io/Blog-Rahmat-Hidayat/Ilmu-Hukum/">Ilmu Hukum</a></li>
-                        <li><a href="https://rahmath07-lab.github.io/Teknologi/">Teknologi</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span>Produk/Jasa</span>
-                    <ul class="submenu">
-                        <li><a href="produk.html">Produk</a></li>
-                        <li><a href="https://rahmath07-lab.github.io/Jasa/">Jasa</a></li>
-                        <li><a href="portofolio.html">Portofolio</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://rahmath07-lab.github.io/Tentang-Saya/">Tentang Saya</a></li>
-                <li><a href="https://rahmath07-lab.github.io/Blog-Rahmat-Hidayat/Kontak/">Kontak</a></li>
+                <!-- ...menu... -->
             </ul>
         </nav>
     </header>
@@ -94,22 +35,11 @@
         <p>Ini adalah situs pribadi saya untuk berbagi informasi, produk, jasa, dan portofolio.</p>
     </main>
     <div class="container">
-        <div class="section">
-            <h2>Tujuan Blog Ini</h2>
-            <p>Blog ini bertujuan untuk berbagi wawasan, ilmu, dan pengalaman seputar kehidupan, hukum, teknologi, serta menyediakan barang dan jasa yang bermanfaat bagi pembaca.</p>
-        </div>
-        <div class="section">
-            <h2>Produk dan Jasa</h2>
-            <p>Kami menawarkan berbagai barang dan jasa yang dapat membantu kebutuhan Anda. <a href="produk-jasa.html">Lihat lebih lanjut</a>.</p>
-        </div>
-        <div class="section">
-            <h2>Kontak</h2>
-            <p>Jika Anda ingin menghubungi saya untuk pertanyaan, diskusi, atau kolaborasi, silakan menuju halaman <a href="kontak.html">Kontak</a>.</p>
-        </div>
+        <!-- ...konten lainnya... -->
         <div class="section">
             <h2>Komentar</h2>
             <p>Silakan tuliskan komentar, pertanyaan, atau diskusi Anda di sini:</p>
-            <form id="komentarForm" action="#" method="post">
+            <form id="komentarForm" method="post">
                 <textarea id="commentInput" name="komentar" rows="5" placeholder="Tulis komentar Anda di sini..." style="width: 100%; padding: 10px;"></textarea>
                 <button type="submit" style="margin-top: 10px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Kirim</button>
             </form>
@@ -118,57 +48,7 @@
     </div>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-    <script type="module">
-        import { initializeApp } from 'firebase/app';
-        import { getFirestore, collection, addDoc, serverTimestamp, query, orderBy, onSnapshot } from 'firebase/firestore';
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyCXEByrfTGH-D7RpBbVQWDoQx7d1bgfH64",
-            authDomain: "blog-rahmat-hidayat.firebaseapp.com",
-            projectId: "blog-rahmat-hidayat",
-            storageBucket: "blog-rahmat-hidayat.firebasestorage.app",
-            messagingSenderId: "422260670210",
-            appId: "1:422260670210:web:309beb5182f62af1890c1b"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-
-        document.getElementById("komentarForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Mencegah refresh halaman
-            submitComment();
-        });
-
-        async function submitComment() {
-            const commentText = document.getElementById("commentInput").value;
-            if (commentText.trim() === "") return alert("Komentar tidak boleh kosong!");
-
-            try {
-                await addDoc(collection(db, "comments"), {
-                    text: commentText,
-                    timestamp: serverTimestamp()
-                });
-                document.getElementById("commentInput").value = ""; // Reset input
-                loadComments(); // Refresh komentar
-            } catch (error) {
-                console.error("Error: ", error);
-            }
-        }
-
-                function loadComments() {
-            document.getElementById("commentsList").innerHTML = ""; // Bersihkan list dulu
-
-            const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
-            onSnapshot(q, (snapshot) => {
-                snapshot.forEach((doc) => {
-                    const comment = doc.data().text;
-                    document.getElementById("commentsList").innerHTML += `<div class="comment">${comment}</div>`;
-                });
-            });
-        }
-
-        loadComments(); // Panggil saat halaman dibuka
-    </script>
+    <script type="module" src="komen-script.js"></script>
     <p>* Form komentar saat ini belum aktif. Silakan hubungi saya di halaman <a href="kontak.html">Kontak</a>.</p>
     <footer>
         <p>&copy; 2024 Rahmat Hidayat. Semua hak dilindungi.</p>
