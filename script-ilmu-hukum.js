@@ -1,3 +1,4 @@
+console.log("Script berhasil dimuat");
 function searchTopicfunction searchTopics() {
     const input = document.getElementById('searchInputIlmu').value.toLowerCase();
     const topics = document.querySelectorAll('.law-card');
