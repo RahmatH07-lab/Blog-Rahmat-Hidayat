@@ -140,6 +140,6 @@ footer {
   }
 }
 
-body, html {
+header, nav, body, html {
   overflow-x: hidden; /* Mencegah halaman bergeser ke kanan */
 }
