@@ -125,3 +125,21 @@ footer {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Navigasi menjadi vertikal di layar kecil */
+  }
+
+  .submenu {
+    position: static; /* Submenu tidak mengambang */
+  }
+
+  nav a {
+    padding: 10px; /* Atur ulang ukuran padding */
+  }
+}
+
+body, html {
+  overflow-x: hidden; /* Mencegah halaman bergeser ke kanan */
+}
