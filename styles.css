@@ -1,29 +1,3 @@
-@media screen and (max-width: 768px) {
-  nav {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-links li {
-    margin: 5px 10px;
-    display: inline-block;
-  }
-
-  .nav-links a {
-    display: block;
-    padding: 10px;
-    white-space: nowrap;
-  }
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -143,22 +117,4 @@ footer {
 #approvedComments li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
-}
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Navigasi menjadi vertikal di layar kecil */
-  }
-
-  .submenu {
-    position: static; /* Submenu tidak mengambang */
-  }
-
-  nav a {
-    padding: 10px; /* Atur ulang ukuran padding */
-  }
-}
-
-body, html {
-  overflow-x: hidden; /* Mencegah halaman bergeser ke kanan */
 }
